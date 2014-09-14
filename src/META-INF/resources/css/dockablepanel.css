@@ -42,6 +42,7 @@
     -webkit-animation: fadein 1s; /* Safari and Chrome */
     -o-animation: fadein 1s; /* Opera */
 }
+<<<<<<< HEAD
 /* Position Top */
 .dockablepanel.dockablepanel-top .ui-shadow {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
@@ -135,3 +136,95 @@
 .dockablepanel-relative.dockablepanel {
     position: relative;
 }
+=======
+
+/* Position Top */
+.dockablepanel.dockablepanel-top .ui-shadow {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+.dockablepanel.dockablepanel-top {
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+.dockablepanel.dockablepanel-top .dockablepanel-content, .dockablepanel.dockablepanel-top .dockablepanel-header {
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.dockablepanel.dockablepanel-top .dockablepanel-header {
+    position: relative;
+    top: -1px;
+}
+/* Position Bottom */
+.dockablepanel.dockablepanel-bottom .ui-shadow {
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.8);
+}
+.dockablepanel.dockablepanel-bottom {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+.dockablepanel.dockablepanel-bottom .dockablepanel-content, .dockablepanel.dockablepanel-bottom .dockablepanel-header {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.dockablepanel.dockablepanel-open.dockablepanel-bottom .dockablepanel-header {
+    position: relative;
+    top: 1px;
+}
+/* Position Left */
+.dockablepanel.dockablepanel-left .ui-shadow {
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.8);
+}
+.dockablepanel.dockablepanel-left {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+}
+.dockablepanel.dockablepanel-left .dockablepanel-content, .dockablepanel.dockablepanel-left .dockablepanel-header {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.dockablepanel.dockablepanel-open.dockablepanel-left .dockablepanel-header {
+    position: relative;
+    right: 1px;
+}
+.dockablepanel.dockablepanel-left .dockablepanel-header-content SPAN {
+    display: block;
+}
+.dockablepanel.dockablepanel-left .dockablepanel-header-content .ui-panel-title {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-o-keyframes fadein { /* Opera */
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+>>>>>>> branch 'master' of https://github.com/f1l0/KatFaces.git
