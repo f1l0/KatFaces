@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<facelet-taglib version="2.0"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facelettaglibrary_2_0.xsd" id="s">
+    <namespace>http://it.katfaces/ui</namespace>
+    <tag>
+        <tag-name>countdown</tag-name>
+        <component>
+            <description><![CDATA[CountDown Component with a callback function.]]></description>
+            <component-type>it.katfaces.CountDown</component-type>
+            <renderer-type>it.katfaces.CountDownRenderer</renderer-type>
+        </component>
+        <attribute>
+            <description><![CDATA[Unique identifier of the component in a namingContainer.]]></description>
+            <name>id</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Boolean value to specify the rendering of the component, when set to false component will not be rendered.]]></description>
+            <name>rendered</name>
+            <required>false</required>
+            <type>java.lang.Boolean</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Name of the client side widget.]]></description>
+            <name>widgetVar</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Text displayed after certain number of days included in countdown (when number days = 1). Default value is ":"]]></description>
+            <name>dayText</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Text displayed after certain number of days included in countdown. Default value is ":"]]></description>
+            <name>daysText</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Text displayed after certain number of hours included in countdown. Default value is ":"]]></description>
+            <name>hoursText</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Text displayed after certain number of minutes included in countdown. Default value is ":"]]></description>
+            <name>minutesText</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Text displayed after certain number of seconds included in countdown. Default value is null]]></description>
+            <name>secondsText</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Class will be added if there is less than 24 hours untill the end of countdown. Default value is false]]></description>
+            <name>oneDayClass</name>
+            <required>false</required>
+            <type>java.lang.Boolean</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Text displayed after the countdown is over (quantity is not take into consideration if it is set up as ‘callback’ option). Default value is "Countdown complete!"]]></description>
+            <name>textAfterCount</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Displaying the number of days remaining till the end of countdown: true -> the number of days is displayed, false -> the number of days is not displayed. Default value is true]]></description>
+            <name>displayDays</name>
+            <required>false</required>
+            <type>java.lang.Boolean</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Displaying the number of days when number of days is 0. Default value is false]]></description>
+            <name>displayZeroDays</name>
+            <required>false</required>
+            <type>java.lang.Boolean</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Adding a class to markers indicating countdown (e.g. indicated the name of call e.g. ‘class-name’). Default value is null]]></description>
+            <name>addClass</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Indicate the function which should be launched after the end of countdown.]]></description>
+            <name>oncomplete</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Inline style]]></description>
+            <name>style</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[CSS styleClass]]></description>
+            <name>styleClass</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Indicate the name of fucntion which should be launched after the end of countdown. Default value is null]]></description>
+            <name>date</name>
+            <required>true</required>
+            <type>java.util.Date</type>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>vtab</tag-name>
+        <component>
+            <description><![CDATA[Vertical Tab to use with Vertical Accordion Component.]]></description>
+            <component-type>it.katfaces.Vtab</component-type>
+            <renderer-type>it.katfaces.VtabRenderer</renderer-type>
+        </component>
+        <attribute>
+            <description><![CDATA[Inline style for Vertical Tab.]]></description>
+            <name>style</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[CSS style class for Vertical Tab.]]></description>
+            <name>styleClass</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>vaccordion</tag-name>
+        <component>
+            <description><![CDATA[Vertical Accordion Component.]]></description>
+            <component-type>it.katfaces.Vaccordion</component-type>
+            <renderer-type>it.katfaces.VaccordionRenderer</renderer-type>
+        </component>
+        <attribute>
+            <description><![CDATA[Header for Vertical Accordion.]]></description>
+            <name>header</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Footer for Vertical Accordion.]]></description>
+            <name>footer</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Boolean value to specify the rendering of the component's header. Default is true]]></description>
+            <name>showHeader</name>
+            <required>false</required>
+            <type>java.lang.Boolean</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Icon for opened tab. Default is ui-icon-bullet]]></description>
+            <name>iconOpen</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Icon for closed tab. Default is ui-icon-radio-on]]></description>
+            <name>iconClose</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Icon position. Possible values are "top", "middle" and "bottom". Default is "middle".]]></description>
+            <name>iconPos</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Inline style for Vertical Tab.]]></description>
+            <name>style</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[CSS style class for Vertical Accordion.]]></description>
+            <name>styleClassOpen</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[CSS style class for opened tab.]]></description>
+            <name>styleClassOpen</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[CSS style class for closed tab.]]></description>
+            <name>styleClassClose</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>dockablepanel</tag-name>
+        <component>
+            <description><![CDATA[DockablePanel with open/close functionality and callback functionsn.]]></description>
+            <component-type>it.strazz.faces.DockablePanel</component-type>
+            <renderer-type>it.strazz.faces.DockablePanelRenderer</renderer-type>
+        </component>
+        <attribute>
+            <description><![CDATA[Unique identifier of the component in a namingContainer.]]></description>
+            <name>id</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Boolean value to specify the rendering of the component, when set to false component will not be rendered.]]></description>
+            <name>rendered</name>
+            <required>false</required>
+            <type>java.lang.Boolean</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Boolean value to specify the position of the Panel (fullpage or relative to the container). Default true.]]></description>
+            <name>fullpage</name>
+            <required>false</required>
+            <type>java.lang.Boolean</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[An el expression referring to a server side UIComponent instance in a backing bean.]]></description>
+            <name>binding</name>
+            <required>false</required>
+            <type>javax.faces.component.UIComponent</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Name of the client side widget.]]></description>
+            <name>widgetVar</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[DockablePanel position. It could be "top","right","bottom","left"]]></description>
+            <name>position</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Inline style.]]></description>
+            <name>style</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[CSS panel styleClass.]]></description>
+            <name>styleClass</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Client side callback function to be execute on panel open.]]></description>
+            <name>onopen</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Client side callback function to be execute on panel close.]]></description>
+            <name>onclose</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[DockablePanel title.]]></description>
+            <name>title</name>
+            <required>true</required>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+</facelet-taglib>
