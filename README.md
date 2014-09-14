@@ -1,4 +1,4 @@
 KatFaces
 ========
 
-Another JSF Components Library
+KatFaces JSF Components Library
